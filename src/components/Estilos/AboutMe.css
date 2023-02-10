@@ -1,0 +1,92 @@
+.sobreMi {
+  font-family: sans-serif;
+  margin: 5.3rem 0;
+}
+.About-me-titulo {
+  text-align: center;
+  color: var(--color--Letras);
+  font-size: 2rem;
+  margin: 0;
+}
+.about-me-content {
+  color: var(--color--Letras);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 45%);
+  gap: 30px;
+  text-align: left;
+  letter-spacing: 2px;
+  place-content: center;
+}
+
+.description-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.parrafo-description {
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  line-height: 40px;
+  width: 95%;
+}
+.parrafo-description a {
+  font-size: 1.1rem;
+  color: var(--color--Letras);
+}
+.About-me-subtitulo {
+  text-align: center;
+  margin: 0;
+  margin-top: 1.2rem;
+}
+
+.logos {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 105px);
+  place-items: center;
+  place-content: center;
+  gap: 40px;
+  width: 100%;
+}
+.logos img {
+  width: 90px;
+  height: 90px;
+}
+.logos img:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1120px) {
+  .about-me-content {
+    text-align: center;
+    display: block;
+  }
+  .parrafo-description {
+    text-align: justify;
+    width: 90%;
+  }
+  .logos {
+    width: 90%;
+    grid-template-columns: repeat(auto-fill, 13vw);
+    gap: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .About-me-titulo {
+    font-size: 1.7rem;
+  }
+  .About-me-subtitulo {
+    font-size: 1.2rem;
+  }
+  .parrafo-description {
+    width: 90%;
+    text-align: justify;
+  }
+}
+@media (max-width: 420px) {
+  .logos img {
+    width: 80px;
+    height: 80px;
+  }
+}

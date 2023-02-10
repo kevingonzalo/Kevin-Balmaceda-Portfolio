@@ -1,0 +1,9 @@
+:root {
+  --color--Principal: #0150f9;
+  --color--Secundario: rgb(236, 236, 236);
+  --color--hover: rgb(167, 165, 165);
+  --color--backgrounds: rgba(0, 0, 0, 0.813);
+  --color--background-body: #fff;
+  --color--Letras: #414141;
+  --transition: all 0.4s ease-in-out;
+}

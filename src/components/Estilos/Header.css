@@ -1,0 +1,231 @@
+/* header */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color--backgrounds);
+  z-index: 4;
+}
+.background {
+  background-image: url(../Header/imgHeader/background.jpg);
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  z-index: -1;
+}
+.header-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* navBar */
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  position: fixed;
+  z-index: 50;
+}
+.navBar.scroll {
+  transition: var(--transition);
+  background-color: var(--color--backgrounds);
+}
+.logo {
+  font-size: 2.5rem;
+  letter-spacing: 0.3rem;
+  font-weight: bold;
+  margin-left: 7rem;
+}
+
+.logo a {
+  color: var(--color--Secundario);
+  text-decoration: none;
+}
+.logo a:hover {
+  color: var(--color--hover);
+}
+.logo::before {
+  content: "<";
+  color: var(--color--Principal);
+}
+.logo::after {
+  content: "/>";
+  color: var(--color--Principal);
+}
+.list {
+  display: flex;
+  list-style: none;
+  margin-right: 7rem;
+}
+.list-element {
+  margin: 0 1rem;
+}
+.list-element a {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: var(--color--Secundario);
+}
+.list-element a:hover {
+  color: var(--color--Principal);
+  transition: 0.5s;
+}
+
+.menu {
+  position: fixed;
+  right: 2.7rem;
+  background: none;
+  border: none;
+  color: var(--color--Secundario);
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  display: none;
+  z-index: 30;
+  transition: all 0.4s ease-in-out;
+}
+.menu:hover {
+  transition: 0.4s;
+  transform: scale(1.1);
+  outline: none;
+}
+@media (max-width: 900px) {
+  .logo {
+    margin-left: 1.5rem;
+    font-size: 4vmax;
+  }
+  .list {
+    margin-right: 1.5rem;
+  }
+  .list-element a {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 560px) {
+  .navBar {
+    padding: 1rem 0;
+  }
+  .menu {
+    display: block;
+  }
+  .list {
+    display: none;
+    transition: var(--transition);
+  }
+  .list.active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    margin-top: 120%;
+    padding: 0;
+    width: 100%;
+    height: 150vh;
+    background-color: var(--color--backgrounds);
+    transition: var(--transition);
+    z-index: 50;
+  }
+  .list-element {
+    padding: 10px;
+    height: 60px;
+  }
+  .list-element a {
+    font-size: 1.5rem;
+  }
+}
+
+/* description */
+.description {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.img-header {
+  width: 35vmax;
+}
+.description-text {
+  text-align: center;
+  margin-right: 5rem;
+  font-family: monospace;
+}
+.Description-Titulo-uno {
+  padding-bottom: 15px;
+  color: var(--color--Principal);
+  margin: 0;
+  font-size: 4rem;
+}
+.Description-Titulo-dos {
+  padding-bottom: 15px;
+  color: var(--color--Secundario);
+  text-align: center;
+  margin: 0;
+  font-size: 3rem;
+}
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color--Secundario);
+  background-color: var(--color--Principal);
+}
+.btn:hover {
+  transition: var(--transition);
+  background-color: var(--color--hover);
+}
+@media (max-width: 1070px) {
+  .description-text {
+    margin-right: 3rem;
+  }
+  .Description-Titulo-uno {
+    font-size: 3.5rem;
+  }
+  .Description-Titulo-dos {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 920px) {
+  .description-text {
+    margin-right: 1rem;
+  }
+}
+@media (max-width: 780px) {
+  .img-header {
+    width: 20rem;
+  }
+  .Description-Titulo-uno {
+    font-size: 2.5rem;
+  }
+  .Description-Titulo-dos {
+    font-size: 2rem;
+  }
+  .description {
+    flex-direction: column;
+  }
+  .description-text {
+    margin: 0;
+  }
+}
+@media (max-width: 470px) {
+  .btn {
+    font-size: 0.9rem;
+  }
+  .description-text {
+    padding-bottom: 2rem;
+  }
+}

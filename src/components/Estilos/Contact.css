@@ -1,0 +1,60 @@
+.contact {
+  width: 90%;
+  margin: 3rem auto;
+}
+.contact-titulo {
+  font-family: sans-serif;
+  text-align: center;
+  color: var(--color--Letras);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+.box-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.box-contact-item {
+  padding: 0 30px;
+}
+.box-contact-item a {
+  text-decoration: none;
+  font-family: sans-serif;
+  color: var(--color--Letras);
+}
+.box-contact-item a i {
+  font-size: 4rem;
+}
+.box-contact-item a p {
+  font-size: 3vh;
+}
+.box-contact-item a i:hover,
+.box-contact-item a p:hover {
+  transition: all 0.4s;
+  color: var(--color--hover);
+}
+
+.mail-icon {
+  color: #dc4e43;
+}
+.linkedin-icon {
+  color: #0e76a8;
+}
+.github-icon {
+  color: #000000;
+}
+.box-contact-item a p {
+  color: var(--color--Letras);
+}
+@media (max-width: 550px) {
+  .box-contact-item a p {
+    font-size: 2vh;
+  }
+  .box-contact-item a i {
+    font-size: 3rem;
+  }
+  .contact-titulo {
+    font-size: 1.7rem;
+  }
+}
