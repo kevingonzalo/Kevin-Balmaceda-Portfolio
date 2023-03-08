@@ -47,6 +47,17 @@
 .box-contact-item a p {
   color: var(--color--Letras);
 }
+.mail-reponsivo {
+  display: none;
+}
+@media (max-width: 800px) {
+  .mail {
+    display: none;
+  }
+  .mail-reponsivo {
+    display: block;
+  }
+}
 @media (max-width: 550px) {
   .box-contact-item a p {
     font-size: 2vh;

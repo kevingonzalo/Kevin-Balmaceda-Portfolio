@@ -7,6 +7,13 @@ const Contact = () => {
       <Titulo clase="contact-titulo" value="Contacto" />
       <div className="box-contact">
         <BoxContact
+          claseMail="mail"
+          enlace="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJqbzwHNKNKCchdPkmpwvlGCFdRBVPQWBfxrPdcrHsdsHKkkvSCBngkXllBbNGfGBgdQMbV"
+          claseIcon="fa-regular fa-envelope mail-icon"
+          parrafo="Mail"
+        />
+        <BoxContact
+          claseMail="mail-reponsivo"
           enlace="mailto:kevinbalmaceda5@gmail.com"
           claseIcon="fa-regular fa-envelope mail-icon"
           parrafo="Mail"

@@ -11,6 +11,8 @@ import WebdePeliculas from "./Projects-img/Web-de-Peliculas-Responsive.png";
 import PortfolioAntiguo from "./Projects-img/PortfolioAntiguo.png";
 import WebdeTestimonios from "./Projects-img/Web-de-Testimonios.png";
 import ListadeCompras from "./Projects-img/ListadeCompras.png";
+import englishSmart from "./Projects-img/englishSmart.png";
+import aquarnemc from "./Projects-img/aquarne-mc.png";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
@@ -95,7 +97,7 @@ const Projects = () => {
           <ProjectItem
             imagen={WebdeTestimonios}
             titulo="Web de Testimonios"
-            text="React."
+            text="REACT."
             alt="Proyecto de Porfolio Web de Testimonios con REACT"
             linkWebside="https://testimonios-reactjs.netlify.app/"
             linkRepository="https://github.com/kevingonzalo/WEB-Testimonios-ReactJS"
@@ -107,6 +109,22 @@ const Projects = () => {
             alt="Proyecto de Porfolio Lista de Compras con Js"
             linkWebside="https://lista-de-compras-comidas.netlify.app/"
             linkRepository="https://github.com/kevingonzalo/Lista-ComprasJs"
+          />
+          <ProjectItem
+            imagen={englishSmart}
+            titulo="AquaneMC Server"
+            text="REACT."
+            alt="Proyecto de Porfolio AquaneMC Server con React"
+            linkWebside="https://aquarnemc-server.netlify.app/"
+            linkRepository="https://github.com/kevingonzalo/aquarne-mc"
+          />
+          <ProjectItem
+            imagen={aquarnemc}
+            titulo="English Smart"
+            text="bootstrap, REACT."
+            alt="Proyecto de Porfolio English Smart con REACT"
+            linkWebside="https://english-smart.netlify.app/"
+            linkRepository="https://github.com/kevingonzalo/english-smart/tree/English-Smart-v1.1"
           />
         </div>
       </div>

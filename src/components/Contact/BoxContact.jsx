@@ -1,8 +1,8 @@
-const BoxContact = ({ claseIcon, parrafo, enlace }) => {
+const BoxContact = ({ claseMail, claseIcon, parrafo, enlace }) => {
   return (
-    <div className="box-contact-item">
+    <div className={`box-contact-item ${claseMail}`}>
       <a href={enlace} target="_blank" rel="noreferrer">
-        <i class={claseIcon}></i>
+        <i className={claseIcon}></i>
         <p>{parrafo}</p>
       </a>
     </div>
