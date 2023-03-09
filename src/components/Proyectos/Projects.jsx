@@ -111,7 +111,7 @@ const Projects = () => {
             linkRepository="https://github.com/kevingonzalo/Lista-ComprasJs"
           />
           <ProjectItem
-            imagen={englishSmart}
+            imagen={aquarnemc}
             titulo="AquaneMC Server"
             text="REACT."
             alt="Proyecto de Porfolio AquaneMC Server con React"
@@ -119,7 +119,7 @@ const Projects = () => {
             linkRepository="https://github.com/kevingonzalo/aquarne-mc"
           />
           <ProjectItem
-            imagen={aquarnemc}
+            imagen={englishSmart}
             titulo="English Smart"
             text="bootstrap, REACT."
             alt="Proyecto de Porfolio English Smart con REACT"
